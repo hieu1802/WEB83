@@ -1,0 +1,172 @@
+.table-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.table-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.table-actions input[type="text"] {
+  padding: 5px;
+  width: 200px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.status {
+  color: #fff;
+  background-color: green;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.pagination {
+  margin-top: 10px;
+  text-align: right;
+}
+
+
+
+
+
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 1000; /* Đảm bảo modal nằm trên các phần tử khác */
+  width: 400px; /* Độ rộng của modal */
+}
+
+/* Đổ bóng cho phần nền của modal */
+.modal::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Màu nền tối với độ trong suốt */
+  z-index: -1; /* Đảm bảo nền nằm dưới modal */
+}
+
+/* Style cho tiêu đề modal */
+.modal h2 {
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+/* Style cho các ô input và label */
+.modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal label {
+  margin-bottom: 5px;
+}
+
+.modal input,
+.modal select {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Style cho các nút */
+.modal button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff; /* Màu nền của nút */
+  color: white; /* Màu chữ của nút */
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.modal button:hover {
+  background-color: #0056b3; /* Màu nền khi hover */
+}
+
+/* Định dạng cho bảng */
+.table-container {
+  padding: 20px;
+}
+
+.table-actions {
+  margin-bottom: 20px;
+}
+
+.table-actions input {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px; /* Độ rộng của ô tìm kiếm */
+}
+
+.table-actions button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.table-actions button:hover {
+  background-color: #0056b3;
+}
+
+/* Style cho bảng */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+/* Style cho trạng thái */
+.status {
+  font-weight: bold;
+}
